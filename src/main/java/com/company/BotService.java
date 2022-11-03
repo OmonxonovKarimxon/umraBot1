@@ -76,7 +76,7 @@ public class BotService {
 
         String name =row.get(0).charAt(0)+" "+ row.get(2).toUpperCase() + " " + row.get(3).toUpperCase();
         String passport = row.get(6);
-        String imagePath = "C:\\MyAllProject\\umraBot1\\src\\main\\resources\\"+name+".png";
+        String imagePath = "./src/resources/"+name+".png";
 
         String surname;
         if (row.get(4).equals("XXX")) {
@@ -87,7 +87,7 @@ public class BotService {
 
 
         //Read the image
-        BufferedImage image = ImageIO.read(new File("C:\\Users\\Karimxon\\Desktop\\copy1.png"));
+        BufferedImage image = ImageIO.read(new File("./src/resources/copy1.png"));
 
         //get the Graphics object
         Graphics g = image.getGraphics();

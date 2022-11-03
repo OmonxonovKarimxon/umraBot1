@@ -57,7 +57,7 @@ public class MyBot extends TelegramLongPollingBot {
                 Long doc_size = update.getMessage().getDocument().getFileSize();
 
 
-                String filePath ="C:\\MyAllProject\\umraBot1\\src\\main\\resources\\newFile.xlsx" ;
+                String filePath ="./src/resources/newFile.xlsx" ;
 
                 Document document = new Document();
                 document.setMimeType(doc_mine);
