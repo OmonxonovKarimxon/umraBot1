@@ -74,15 +74,15 @@ public class BotService {
 
     public static String sendFile(List<String> row, String ziyoratTuri, String groupNumber, long chatId) throws IOException {
 
-        String name =row.get(0).charAt(0)+" "+ row.get(2).toUpperCase() + " " + row.get(3).toUpperCase();
-        String passport = row.get(6);
+        String name =row.get(0).substring(0, row.get(0).length()-2)+" "+ row.get(1).toUpperCase() + " " + row.get(2).toUpperCase();
+        String passport = row.get(5);
         String imagePath = "./src/resources/"+name+".png";
 
         String surname;
-        if (row.get(4).equals("XXX")) {
+        if (row.get(3).equals("XXX")) {
             surname = "";
         } else {
-            surname = row.get(4).toUpperCase();
+            surname = row.get(3).toUpperCase();
         }
 
 
